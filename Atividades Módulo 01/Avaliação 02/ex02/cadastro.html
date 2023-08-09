@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituto Delta - Formulário de Associação</title>
+</head>
+<body link="blue" vlink="red" alink="green">
+    <table color="white" cellpading="1" cellspacing="1" width="100%" border="1">
+        <tr>
+            <td colspan="3" border="1"><img src="img/inst-delta-01.jpg" alt="institutodelta" height="100" align="left"><h1>Formulário de Associação</h1></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <br>
+                <a href="home.html">   Home  </a>
+                <a href="cadastro.html">    Cadastro  </a>
+                <a href="pagamento.html">  Pagamento </a>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="cadastro.html" name="formulario" id="formulario" method="post">
+                    <br>
+                    <fieldset>
+                        <legend align="center">DADOS PESSOAIS</legend>
+                        <table>
+                            <tr>
+                                <td><label>CPF: </label></td>
+                                <td><input type="text" pattern="[0-9]" name="cpf" id="cpf" size="20" maxlength="11" required> (apenas números)</td>
+                                <td><label>Nascimento: </label></td>
+                                <td><input type="text" pattern="[0-9]" name="nascimento" id="nascimento" maxlength="8" value="dd/mm/aaaa" required></td>
+                            </tr>
+                            <tr>
+                                <td><label>Nome: </label></td>
+                                <td><input type="text" name="nome" id="nome" size="46"></td>
+                                <td><label>Naturalidade: </label></td>
+                                <td>
+                                    <input type="text" name="naturalidade" id="naturalidade">
+                                    <select name="naturalidade" required>
+                                        <option value="Piaui"> PI </option>
+                                        <option value="Maranhao"> MA </option>
+                                        <option value="Ceara"> CE </option>
+                                        <option value="Outro"> Outro </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Nacionalidade: </label></td>
+                                <td><input type="text" name="nacionalidade" id="nacionalidade" value="Brasileira"></td>
+                                <td><label>Estado civil: </label></td>
+                                <td><select name="estado">
+                                        <option value="Casado"> Casado(a) </option>
+                                        <option value="Solteiro"> Solteiro(a) </option>
+                                        <option value="Separado"> Separado(a) </option>
+                                        <option value="Divorciado"> Divorciado(a) </option>
+                                        <option value="Viúvo"> Viúvo(a) </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>Tipo associação </label></td>
+                                <td><select name="tipo">
+                                    <option value="Estudante"> Estudante (R$ 15,00 por ano) </option>
+                                    <option value="Profissional"> Profissional (R$ 50,00 por ano) </option>
+                                    </select>
+                                </td>
+                                <td><label>Instituição: </label></td>
+                                <td><input type="text" name="instituiçao" id="instituiçao"> (universidade, faculdade, empresa, etc.)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>RG: </label></td>
+                                <td><input type="number" name="rg" id="rg">
+                                    <label>Emissor RG: </label>
+                                    <input type="text" name="emissor" id="emissor" size="5">
+                                </td>
+                                <td><label>Profissão: </label></td>
+                                <td><input type="text" name="profissao" id="profissao"></td>
+                            </tr>
+                        </table>
+                    </fieldset><br>
+                    <fieldset size="90%">
+                        <legend align="center">DADOS PARA CONTATO</legend>
+                        <table>
+                            <tr>
+                                <td><label>Logradouro: </label></td>
+                                <td><input type="text" name="logradouro" id="logradouro" size="46"></td>
+                                <td><label>Número: </label></td>
+                                <td><input type="text" pattern="[0-9]{3}" id="numero"></td>
+                            </tr>
+                            <tr>
+                                <td><label>Complemento: </label></td>
+                                <td><input type="text" name="complemento" id="complemento" size="46"></td>
+                                <td><label>Bairro: </label></td>
+                                <td><input type="text" name="bairro" id="bairro"></td>
+                            </tr>
+                            <tr>
+                                <td><label>CEP: </label></td>
+                                <td><input type="text" pattern="[0-9]" id="cep" maxlength="8"> (apenas números)</td>
+                                <td><label>Cidade: </label></td>
+                                <td>
+                                    <input type="text" name="cidade" id="cidade">
+                                    <select name="naturalidade" required>
+                                        <option value="Piaui"> PI </option>
+                                        <option value="Maranhao"> MA </option>
+                                        <option value="Ceara"> CE </option>
+                                        <option value="Outro"> Outro </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label>E-mail: </label></td>
+                                <td><input type="email" name="email" id="email" size="45" required></td>
+                                <td><label>Telefone: </label></td>
+                                <td>
+                                    <input type="text" pattern="[0-9]" id="telefone" maxlength="2" size="2">
+                                    <input type="text" pattern="[0-9]" id="telefone" maxlength="9" size="9">
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset><br>
+                    <button type="submit" name="btn_confirmar">Confirmar</button>
+                </form>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">  &copy; 2015 Instituto Delta. All rights reserved.</td>
+        </tr>
+    </table>
+</body>
+</html>

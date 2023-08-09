@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 - Exemplo 01</title>
+</head>
+<body>
+    <h1>HTML 5 - Exemplo 01</h1>
+    <form action="cadastro.html" name="formulario" id="formulario" method="post">
+        <fieldset>
+            <legend>Parte 1</legend>
+            <label>URL : </label>
+            <input type="url" name="url" id="url" list="hpurls" required/>
+            <br/><br/>
+            <datalist id="hpurls">
+                <option value="http://ifpi.edu.br/" label="IFPI"></option>
+                <option value="http://www.terra.com.br/" label="Terra"></option>
+                <option value="http://www.g1.com.br" label="G1"></option>
+            </datalist>
+            <label>E-mail : </label>
+            <input type="email" name="email" id="email" required/>
+            <br/><br/>
+            <label>Mes/ano : </label>
+            <input type="month" name="mesano" id="mesano"/>
+            <br/><br/>
+            <label>Data : </label>
+            <input type="data" name="data" id="data" required/>
+            <br/><br/>
+            <label>Hora : </label>
+            <input type="time" name="hora" id="hora"/>
+            <br/><br/>
+            <label>Semana : </label>
+            <input type="week" name="semana" id="semana"/>
+            <br/><br/>
+        </fieldset>
+        <fieldset>
+            <legend align="center">Parte 2</legend>
+            <label>Número : </label>
+            <input type="number" name="numero" id="numero" min="1" max="10" required/>
+            <br/><br/>
+            <label>Número : </label>
+            1 <input type="range" name="slider" id="slider" min="1" max="10" step="1"/> 10
+            <br/><br/>
+            <label>Cor : </label>
+            <input type="color" name="cor" id="cor"/>
+            <br/><br/>
+            <label>Número: </label> <input type="text" pattern="[0-9]{3}" id="numero" required title="Digite um número"/>
+        </fieldset><br/>
+        <button type="submit" name="btn_confirmar">Confirmar</button>
+        <button type="reset" name="btn_limpar">Limpar</button>
+    </form>
+</body>
+</html>

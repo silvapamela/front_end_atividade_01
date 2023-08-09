@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção de Usuário</title>
+</head>
+<body link="blue" vlink="red" alink="green">
+    <h1 align="center">e-Compras</h1>
+    <table align="center">
+        <tr>
+            <td>
+                <table bgcolor="#DCDCDC">
+                    <tr>
+                        <td>Produtos:</td>
+                    </tr>
+                    <tr>
+                        <td>- &lsqb; <a href="inclusao.html">Inclusão</a> &rsqb;</td>
+                    </tr>
+                    <tr>
+                        <td>Relatórios:</td>
+                    </tr>
+                    <tr>
+                        <td>- &lsqb; <a href="porusuario.html">Por usuário</a> &rsqb; <br></td>
+                    </tr>
+                    <tr>
+                        <td><hr color="#696969"></td>
+                    </tr>
+                    <tr>
+                        <td>Manutenção:</td>
+                    </tr>
+                    <tr>
+                        <td>- &lsqb; <a href="usuarioManutençao.html">Usuários</a> &rsqb;</td>
+                    </tr>
+                    <tr>
+                        <td><hr color="#696969"></td>
+                    </tr>
+                    <tr>
+                        <td>- &lsqb; <a href="alterarsenha.html">Alterar senha</a> &rsqb;</td>
+                    </tr>
+                    <tr>
+                        <td>- &lsqb; <a href="index.html">Sair</a> &rsqb;</td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <form action="usuarioManutençao.html" method="post">
+                    <table align="right">
+                        <tr>
+                            <td colspan="2" align="center"><h2>Manutenção de Usuário</h2></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Matrícula(*):</td>
+                            <td><input type="text" name="matricula" id="matricula" size="5" maxlength="10"/></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Login(*):</td>
+                            <td><input type="text" name="login" id="login" size="15" maxlength="40"/></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Nome(*):</td>
+                            <td><input type="text" name="nome" id="nome" size="30" maxlength="40"/></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Órgão(*):</td>
+                            <td>
+                                <select name="orgao" id="orgao">
+                                    <option value=" ">  </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Supervisor(*):</td>
+                            <td>
+                                <select name="supervisor" id="supervisor">
+                                    <option value=" ">  </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Tipo Usuário(*):</td>
+                            <td>
+                                <select name="usuario" id="usuario">
+                                    <option value=" ">  </option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Situação(*):</td>
+                            <td>
+                                <select name="situacao" id="situacao">
+                                    <option value="Ativo">Ativo</option>
+                                    <option value="Inativo">Inativo</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="right">Senha(*):</td>
+                            <td><input type="password" name="senha" id="senha" size="7" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td align="right">Confirme Senha(*):</td>
+                            <td><input type="password" name="senha" id="senha" size="7" maxlength="10"></td>
+                        </tr>
+                        <tr>
+                            <td><br>(*) Campo obrigatório</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <br><input type="submit" name="confirmar" value="Confirmar">
+                                <input type="reset" name="limpar" value="Limpar">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
